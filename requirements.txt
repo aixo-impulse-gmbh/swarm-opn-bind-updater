@@ -1,0 +1,8 @@
+# App requirements
+dotenv==0.9.9
+requests==2.32.3
+
+# Test requirements
+pytest==8.3.4
+requests-mock==1.12.1
+pytest_httpserver==1.1.2

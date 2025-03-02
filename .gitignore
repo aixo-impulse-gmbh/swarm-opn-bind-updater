@@ -1,0 +1,13 @@
+# Exclude python files
+
+# Sensitive data
+.env
+
+# The virtual environment
+.venv
+
+# Compiler artifacts
+__pycache__/
+
+# Pytest artifacts
+.pytest_cache/
