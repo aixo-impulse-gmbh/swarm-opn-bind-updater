@@ -1,0 +1,43 @@
+[project]
+description = "Updates the OPNSense bind dns record upon starting docker swarm services"
+name = "swarm_opn_bind_updater"
+version = "0.2.0"
+
+readme = "README.md"
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+requires-python = ">=3.12"
+
+authors = [
+  { name="Frank Seidinger", email="frank.seidinger@aixo.com" },
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+
+    "Programming Language :: Python :: 3.12",
+
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "dotenv (>=0.9.9,<0.10.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "docker (>=7.1.0,<8.0.0)"
+]
+
+[tool.poetry.scripts]
+swarm_opn_bind_updater = "swarm_opn_bind_updater.main:main"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+requests-mock = "^1.12.1"
+pytest-httpserver = "^1.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

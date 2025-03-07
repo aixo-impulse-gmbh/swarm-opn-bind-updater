@@ -11,3 +11,6 @@ __pycache__/
 
 # Pytest artifacts
 .pytest_cache/
+
+# Build artifacts
+dist/
