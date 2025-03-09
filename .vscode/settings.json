@@ -1,8 +1,14 @@
 {
-    "makefile.configureOnOpen": false,
+    "cSpell.words": [
+        "myhost",
+        "pipx",
+        "Traefik",
+        "venv"
+    ],
+
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
     "python.testing.pytestArgs": [
         "tests"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    ]
 }
